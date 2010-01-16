@@ -4,6 +4,8 @@
 directory "/Users/technicalpickles/code/vendor/rails", :glob => "{*/,}*.gemspec"
 gem "rails", "3.0.pre"
 
+gem 'bluecloth'
+
 ## Bundle the gems you use:
 # gem "bj"
 # gem "hpricot", "0.6"

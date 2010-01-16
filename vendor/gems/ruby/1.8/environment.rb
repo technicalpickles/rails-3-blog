@@ -12,14 +12,14 @@ module Bundler
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activesupport/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/arel-0.2.pre/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/arel-0.2.pre/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activemodel/bin")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activemodel/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-1.1.0/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-1.1.0/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-test-0.5.3/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-test-0.5.3/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-mount-0.4.4/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-mount-0.4.4/lib")
-  $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activemodel/bin")
-  $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activemodel/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/abstract-1.0.0/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/abstract-1.0.0/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/erubis-2.6.5/bin")
@@ -36,6 +36,8 @@ module Bundler
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rake-0.8.7/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/railties/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/railties/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/bluecloth-2.0.5/bin")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/bluecloth-2.0.5/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activerecord/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activerecord/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/../../../../../../vendor/rails/activeresource/bin")
@@ -54,14 +56,14 @@ module Bundler
   @bundled_specs["activesupport"].loaded_from = "#{dir}/specifications/activesupport-3.0.pre.gemspec"
   @bundled_specs["arel"] = eval(File.read("#{dir}/specifications/arel-0.2.pre.gemspec"))
   @bundled_specs["arel"].loaded_from = "#{dir}/specifications/arel-0.2.pre.gemspec"
+  @bundled_specs["activemodel"] = eval(File.read("#{dir}/specifications/activemodel-3.0.pre.gemspec"))
+  @bundled_specs["activemodel"].loaded_from = "#{dir}/specifications/activemodel-3.0.pre.gemspec"
   @bundled_specs["rack"] = eval(File.read("#{dir}/specifications/rack-1.1.0.gemspec"))
   @bundled_specs["rack"].loaded_from = "#{dir}/specifications/rack-1.1.0.gemspec"
   @bundled_specs["rack-test"] = eval(File.read("#{dir}/specifications/rack-test-0.5.3.gemspec"))
   @bundled_specs["rack-test"].loaded_from = "#{dir}/specifications/rack-test-0.5.3.gemspec"
   @bundled_specs["rack-mount"] = eval(File.read("#{dir}/specifications/rack-mount-0.4.4.gemspec"))
   @bundled_specs["rack-mount"].loaded_from = "#{dir}/specifications/rack-mount-0.4.4.gemspec"
-  @bundled_specs["activemodel"] = eval(File.read("#{dir}/specifications/activemodel-3.0.pre.gemspec"))
-  @bundled_specs["activemodel"].loaded_from = "#{dir}/specifications/activemodel-3.0.pre.gemspec"
   @bundled_specs["abstract"] = eval(File.read("#{dir}/specifications/abstract-1.0.0.gemspec"))
   @bundled_specs["abstract"].loaded_from = "#{dir}/specifications/abstract-1.0.0.gemspec"
   @bundled_specs["erubis"] = eval(File.read("#{dir}/specifications/erubis-2.6.5.gemspec"))
@@ -78,6 +80,8 @@ module Bundler
   @bundled_specs["rake"].loaded_from = "#{dir}/specifications/rake-0.8.7.gemspec"
   @bundled_specs["railties"] = eval(File.read("#{dir}/specifications/railties-3.0.pre.gemspec"))
   @bundled_specs["railties"].loaded_from = "#{dir}/specifications/railties-3.0.pre.gemspec"
+  @bundled_specs["bluecloth"] = eval(File.read("#{dir}/specifications/bluecloth-2.0.5.gemspec"))
+  @bundled_specs["bluecloth"].loaded_from = "#{dir}/specifications/bluecloth-2.0.5.gemspec"
   @bundled_specs["activerecord"] = eval(File.read("#{dir}/specifications/activerecord-3.0.pre.gemspec"))
   @bundled_specs["activerecord"].loaded_from = "#{dir}/specifications/activerecord-3.0.pre.gemspec"
   @bundled_specs["activeresource"] = eval(File.read("#{dir}/specifications/activeresource-3.0.pre.gemspec"))
