@@ -1,7 +1,3 @@
-set :repository,  "."
-set :deploy_via, :copy
-set :scm, :none
-
 set :user, 'ubuntu'
 
 ssh_options[:keys] = ["#{ENV['HOME']}/.sumo/keypair.pem"]
@@ -11,7 +7,7 @@ server instance, :app, :web, :db, :primary => true
 
 namespace :gems do
   task :bundle, :roles => :app do
-    run "cd #{release_path} && gem bundle --cached"
+    run "cd #{release_path} && gem bundle"
   end
 end
 
