@@ -3,7 +3,7 @@
 :user: ubuntu
 #:time_zone: UTC
 :deploy_to: /srv/rails-3-blog
-:domain: <%= YAML.load_file(File.join(File.dirname(__FILE__), 'moonshine.yml'))[:domain] %>
+:domain: ec2-75-101-232-194.compute-1.amazonaws.com
 #:domain_aliases:
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
