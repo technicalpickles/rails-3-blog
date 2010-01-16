@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Posts: <%= controller.action_name %></title>
+  <title>MAI AWESUM BLAWG: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 
 <body>
 
-<%= link_to 'New post', new_post_path %>
+  <%= link_to "zomg" %>
+
+<h1>MAI AWESUM BLAWG</h1>
 
 <p class="notice"><%= notice %></p>
 
 <%= yield %>
+
+<div class="admin">
+  <%= link_to 'New post', new_post_path %>
+</div>
 
 </body>
 </html>
