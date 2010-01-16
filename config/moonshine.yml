@@ -1,9 +1,9 @@
 :ruby: ree
-:application: your_app_name
-:user: rails
+:application: rails-3-blog
+:user: ubuntu
 #:time_zone: UTC
-:deploy_to: /srv/your_app_name
-:domain: yourapp.com
+:deploy_to: /srv/rails-3-blog
+:domain: <%= YAML.load_file(File.join(File.dirname(__FILE__), 'moonshine.yml'))[:domain] %>
 #:domain_aliases:
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
