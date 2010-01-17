@@ -2,7 +2,7 @@
 
 <div id="<%= dom_id(post) %>" class="<%= dom_class(post) %>">
   <% require 'bluecloth' %>
-  <div class="body"><%= markdown(post.body) %></div>
+  <div class="body"><%= markdown(post.body).html_safe! %></div>
 
   <ul class="actions">
     <li><%= 'Not' unless post.published? %> Published</li>
