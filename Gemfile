@@ -1,12 +1,9 @@
 # Edit this Gemfile to bundle your application's dependencies.
 
 ## Bundle edge rails:
-if File.directory? "/Users/technicalpickles/code/vendor/rails"
-  directory "/Users/technicalpickles/code/vendor/rails", :glob => "{*/,}*.gemspec"
-  gem "rails", "3.0.pre"
-else
-  gem "rails", :git => "git://github.com/rails/rails.git"
-end
+#directory "/Users/technicalpickles/code/vendor/rails", :glob => "{*/,}*.gemspec"
+directory "vendor/rails", :glob => "{*/,}*.gemspec"
+gem "rails", "3.0.pre"
 
 gem 'bluecloth'
 

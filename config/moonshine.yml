@@ -3,12 +3,12 @@
 :user: ubuntu
 #:time_zone: UTC
 :deploy_to: /srv/rails-3-blog
-:domain: ec2-174-129-149-31.compute-1.amazonaws.com
+:domain: ec2-204-236-193-86.compute-1.amazonaws.com
 #:domain_aliases:
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
 #:scm: git
-:repository: git://github.com/railsmachine/moonshine.git
+:repository: git://github.com/technicalpickles/rails-3-blog.git
 # Use :app_symlinks to setup directories under public/ that you want to persist
 # across deployments. They'll be symlinked to the shared directory.
 #:app_symlinks:
