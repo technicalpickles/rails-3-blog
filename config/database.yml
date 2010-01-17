@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: rails-3-blog_development
+  database: rails_3_blog_development
   pool: 5
   username: root
   password:
@@ -31,7 +31,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: rails-3-blog_test
+  database: rails_3_blog_test
   pool: 5
   username: root
   password:
@@ -41,7 +41,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: rails-3-blog_production
+  database: rails_3_blog_production
   pool: 5
   username: root
   password: 

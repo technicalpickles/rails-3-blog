@@ -3,7 +3,7 @@
 :user: ubuntu
 #:time_zone: UTC
 :deploy_to: /srv/rails-3-blog
-:domain: ec2-204-236-193-86.compute-1.amazonaws.com
+:domain: ec2-67-202-36-48.compute-1.amazonaws.com
 #:domain_aliases:
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
