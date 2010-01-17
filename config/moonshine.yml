@@ -1,13 +1,14 @@
-application: rails-3-blog
-user: ubuntu
-domain: ec2-67-202-36-48.compute-1.amazonaws.com
-repository: git://github.com/technicalpickles/rails-3-blog.git
-shared_children:
+:application: rails-3-blog
+:deploy_to: /srv/rails-3-blog
+:user: ubuntu
+:domain: ec2-72-44-38-152.compute-1.amazonaws.com
+:repository: git://github.com/technicalpickles/rails-3-blog.git
+:shared_children:
 - system
 - log
 - pids
 - config
-passenger:
-  max_pool_size: 3
-mysql:
-  innodb_buffer_pool_size: 128M
+:passenger:
+  :max_pool_size: 3
+:mysql:
+  :innodb_buffer_pool_size: 128M

@@ -22,7 +22,7 @@ rescue Exception
 end
 
 set :scm, :svn if repository =~ /^svn/
-set :deploy_to, "/srv/#{application}" if deploy_to.blank?
+set :deploy_to, "/srv/#{application}" unless deploy_to && !deploy_to.empty?
 
 namespace :moonshine do
 
@@ -333,7 +333,13 @@ namespace :bundler do
   task :install do
     sudo "gem install bundler --no-rdoc --no-ri"
   end
+
+  task :bundle do
+    run "cd #{release_path} && gem bundle"
+  end
 end
+
+after 'deploy:update_code', 'gems:bundle'
 
 namespace :apache do
   desc "Restarts the Apache web server"
