@@ -18,11 +18,11 @@ begin
 rescue Exception
   puts "To use Capistrano with Moonshine, please run 'ruby script/generate moonshine',"
   puts "edit config/moonshine.yml, then re-run capistrano."
-  raise
   exit(1)
 end
 
-set :scm, :svn if !! repository =~ /^svn/
+set :scm, :svn if repository =~ /^svn/
+set :deploy_to, "/srv/#{application}" if deploy_to.blank?
 
 namespace :moonshine do
 
