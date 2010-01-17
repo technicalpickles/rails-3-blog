@@ -250,7 +250,7 @@ namespace :ruby do
   desc "Install Ruby + Rubygems"
   task :install do
     install_deps
-    send fetch(:ruby, 'ree').intern
+    send fetch(:ruby, 'ree187').intern
     install_rubygems
     install_moonshine_deps
   end
