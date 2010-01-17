@@ -339,7 +339,7 @@ namespace :bundler do
   end
 end
 
-after 'deploy:update_code', 'gems:bundle'
+after 'deploy:update_code', 'bundler:bundle'
 
 namespace :apache do
   desc "Restarts the Apache web server"
