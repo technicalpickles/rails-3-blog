@@ -2,8 +2,8 @@
 
 ## Bundle edge rails:
 #directory "/Users/technicalpickles/code/vendor/rails", :glob => "{*/,}*.gemspec"
-directory "vendor/rails", :glob => "{*/,}*.gemspec"
-gem "rails", "3.0.pre"
+#directory "vendor/rails", :glob => "{*/,}*.gemspec"
+gem "rails", :git => "git://github.com/rails/rails.git"
 
 gem 'bluecloth'
 
